@@ -1,0 +1,1262 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dictionary
+% LaTeX Template
+% Version 1.0 (20/12/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Vel (vel@latextemplates.com) inspired by a template by Marc Lavaud
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,twoside]{article} % 10pt font size, A4 paper and two-sided margins
+
+\usepackage[top=3.5cm,bottom=3.5cm,left=3.7cm,right=4.7cm,columnsep=30pt]{geometry} % Document margins and spacings
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{palatino} % Use the Palatino font
+
+\usepackage{microtype} % Improves spacing
+
+\usepackage{multicol} % Required for splitting text into multiple columns
+
+\usepackage{xcolor} % Required for colors using in delimeter
+\usepackage{amsmath}
+
+\usepackage[bf,sf,center]{titlesec} % Required for modifying section titles - bold, sans-serif, centered
+\usepackage[labelfont=bf, labelsep=none]{caption}
+
+\usepackage{fancyhdr} % Required for modifying headers and footers
+\fancyhead[L]{\textsf{\rightmark}} % Top left header
+\fancyhead[R]{\textsf{\leftmark}} % Top right header
+\renewcommand{\headrulewidth}{1.4pt} % Rule under the header
+\fancyfoot[C]{\textbf{\textsf{\thepage}}} % Bottom center footer
+\renewcommand{\footrulewidth}{1.4pt} % Rule under the footer
+\pagestyle{fancy} % Use the custom headers and footers throughout the document
+
+\newcommand{\entry}[5]{\markboth{#1}{#1}\textbf{#1}\ {(#2)}\ \textit{#3}\ $\bullet$\ \textbf{\textit{#4}} \begin{small}#5\end{small}}  % Defines the command to print each word on the page, \markboth{}{} prints the first word on the page in the top left header and the last word in the top right
+
+%French-specific commands
+%--------------------------------------
+\usepackage[french]{babel}
+\usepackage[autolanguage]{numprint} % for the \nombre command
+
+% Chinese-specific commands
+% --------------------------------------
+\usepackage{xeCJK} % Required for Chinese characters
+\setCJKmainfont{Noto Sans CJK SC} % Use Noto Sans CJK SC instead of SimSun
+\usepackage{fontspec} % For handling other fonts like Palatino
+
+%----------------------------------------------------------------------------------------
+
+% Hyper Link Setup
+% --------------------------------------
+\usepackage{hyperref} % Required for creating hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	Interrogatif
+%----------------------------------------------------------------------------------------
+\section*{Interrogatif}
+
+\subsection*{Pronom Interrogatif}
+\begin{multicols}{2}
+    \entry{où}{}{}{Where}{}
+
+    \entry{quand}{}{}{When}{}
+
+    \entry{comment}{}{}{How}{}
+
+    \entry{quoi}{}{}{What}{}
+
+    \entry{combien}{}{}{How many}{}
+
+    \entry{qui}{}{}{Who}{}
+\end{multicols}
+
+\subsection*{Adjective Interrogatif}
+\begin{center}
+    Adjective Interrogatif are used at the beginning of a sentence, before the \textbf{noun} they modify
+\end{center}
+\begin{multicols}{2}
+    \entry{quel}{}{}{which, what}{| used when noun \textbf{masculin and singulier} | e.g. Quel est ton nom? Je m'appelle Fernando.}
+
+    \entry{quels}{}{}{which, what}{| used when noun \textbf{masculin and pluriel} | e.g. Tu connais quels pays? Je connais le Canada.}
+
+    \entry{quelle}{}{}{which, what}{| used when noun \textbf{féminin and singulier} | e.g. Quelle est ta nationalité? Je suis chinois.}
+
+    \entry{quelles}{}{}{which, what}{| used when noun \textbf{féminin and pluriel} | e.g. Tu parles quelles langues? Je parle français et espagnol.}
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	Pronom
+%----------------------------------------------------------------------------------------
+\section*{Pronom}
+\subsection*{Pronom Personnel}
+\begin{multicols}{2}
+    \entry{Je}{}{}{I}{}
+
+    \entry{Tu}{}{}{You}{}
+
+    \entry{Il/Elle/On}{}{}{He/She/We}{}
+
+    \entry{nous}{}{}{We}{}
+
+    \entry{vous}{}{}{You}{}
+
+    \entry{ils/elles}{}{}{they}{}
+
+\end{multicols}
+
+\subsection*{Disjunctive Pronoun}
+\begin{center}
+    They are used for emphasis or in specific grammatical contexts, such as after prepositions or for contrast.
+\end{center}
+\begin{multicols}{2}
+    \entry{Moi}{}{}{}{Moi, je m'appelle Lisa.}
+
+    \entry{Toi}{}{}{}{Et toi, tu es américan.}
+
+    \entry{Lui/Elle}{}{}{}{Lui, il habite à Paris. | Elle, elle est étudiante.}
+
+    \entry{Nous}{}{}{}{Nous, nous sommes français. | "On" will also use "Nous" | e.g. Nous, on est français}
+
+    \entry{Vous}{}{}{}{Vous, vous êtres américan.}
+
+    \entry{Eux/Elles}{}{}{}{Eux, ils ont 20 ans.}
+\end{multicols}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{}} & \textbf{masculin singulier} & \multicolumn{1}{l|}{\textbf{féminin singulier}} & \multicolumn{1}{l|}{\textbf{pluriel}} \\ \hline
+\textbf{à moi}                  & mon stylo                   & ma trousse                                      & mes stylos                            \\ \hline
+\textbf{à toi}                  & ton                         & ta                                              & tes                                   \\ \hline
+\textbf{à elle/lui}             & son                         & sa                                              & ses                                   \\ \hline
+\textbf{à nous/on}              & notre                       & notre                                           & nos                                   \\ \hline
+\textbf{à vous}                 & votre                       & votre                                           & vos                                   \\ \hline
+\textbf{à elles/eux}            & leur                        & leur                                            & leurs                                 \\ \hline
+\end{tabular}
+\caption{Adjectifs Possessifs}
+\label{tab:adjectifs-possessifs}
+\end{table}
+
+\subsection*{y (Unit 3)}
+\begin{center}
+    there, here
+\end{center}
+\begin{enumerate}
+    \item Le pronom \textit{y} remplace un nom de \textbf{lieu}. \\
+    e.g. Il va a Paris. Il y va en avion. \\
+    \fbox{
+        \parbox{0.9\linewidth}{
+        \textbf{Attention}:
+        \begin{enumerate}
+            \item je $\rightarrow$ j' + y. \\
+            e.g. Je vais a Paris. J'y vais.
+        \end{enumerate}
+        }
+    }
+    \item Au present de l'indicatif. Le pronom y se place entre le sujet et le verbe. (In the present indicative. The pronoun y is placed between the subject and the verb). \\
+    e.g. \textbf{sujet + y + verbe}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	Articles
+%----------------------------------------------------------------------------------------
+\section*{Articles}
+\subsection*{Articles Définis}
+\subsubsection*{the (before the country names)}
+\begin{multicols}{2}
+    \entry{la}{}{}{}{used when \textbf{pays féminine (finished with "-e")} | e.g. \textbf{la} Russi\textbf{e}}
+
+    \entry{le}{}{}{}{used when \textbf{pays masculin} | e.g. \textbf{le} Japon}
+
+    \entry{les}{}{}{}{used when \textbf{pays pluriel (finished with "-s"} | e.g. \textbf{les} États-Uni\textbf{s}}
+
+    \entry{l'}{}{}{}{used when \textbf{pays voyelle} | e.g. \textbf{l' A}rgentine | It has the highest priority}
+\end{multicols}
+
+\subsection*{Articles Indéfinis}
+\subsubsection*{a / some}
+\begin{multicols}{2}
+    \entry{un}{}{}{a}{| used with nom masculin and singulier}
+
+    \entry{une}{}{}{a}{| used with nom feminin and singulier}
+
+    \entry{des}{}{}{some}{| used with pluriel}
+\end{multicols}
+\fbox{
+\parbox{0.9\linewidth}{
+    \textbf{Attention}:
+    \begin{enumerate}
+        \item A la forme négative, "un, une, des" $\rightarrow$ "de" (or "d'" devant une voyelle ou un "h") \newline
+        J'ai \textbf{des} stylos $\rightarrow$ Je \underline{n}'ai \underline{pas} \textbf{de} stylos. \newline
+        J'ai \textbf{un} ordinateur. $\rightarrow$ Je n'ai pas \textbf{d'}\underline{o}rdinateur. \newline
+        Elle a \textbf{une} valise $\rightarrow$ Elle n'a pas \textbf{de} valise. \newline
+        Sauf (Safe): C'est \textbf{un} stylo. $\rightarrow$ Ce n'est pas \textbf{de} stylo.
+    \end{enumerate}
+    }
+}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{} & \begin{tabular}[c]{@{}l@{}}définis\\ (spécifique)\end{tabular}                                                                             & \begin{tabular}[c]{@{}l@{}}indéfinis\\ (général)\end{tabular}                                                                                    & \begin{tabular}[c]{@{}l@{}}partitifs\\ (on ne peut pas compter)\\ (we can't count)\end{tabular}                                        \\ \hline
+masculin               & \textbf{le}                                                                                                                                         & \textbf{un}                                                                                                                                               & \textbf{du}                                                                                                                                     \\ \hline
+féminin                & \textbf{la}                                                                                                                                         & \textbf{une}                                                                                                                                              & \textbf{de la}                                                                                                                                  \\ \hline
+pluriel                & \textbf{les}                                                                                                                                        & \textbf{des}                                                                                                                                              &                                                                                                                                        \\ \hline
+négation               &                                                                                                                                            & \textbf{de(d')}                                                                                                                                           & \textbf{de(d')}                                                                                                                                 \\ \hline
+                       & \begin{tabular}[c]{@{}l@{}}Le garçon sur \textbf{la} photo\\ s'appelle Victor et \textbf{la}\\ fille, Marie. Ce sont \textbf{les}\\ enfants de Virginie.\end{tabular} & \begin{tabular}[c]{@{}l@{}}- Vous avez \textbf{des}\\ enfants?\\ - Oui, \textbf{un} garçon et\\ \textbf{une} fille. Et vous?\\ - Non, je n'ai pas\\ \textbf{d'}enfants.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Le soir, en général, je\\ mange \textbf{de la} salade et\\ \textbf{du} formage mais je ne\\ mange pas \textbf{de} viande.\end{tabular} \\ \hline
+\end{tabular}
+\caption{Articles}
+\label{tab:articles}
+\end{table}
+
+\subsection*{L'article contracté et les préposition}
+\begin{center}
+    "contracté" means "contracted/tense" in English. Here it means when prepostions are in front of articles, there may have some "omit".
+\end{center}
+\begin{enumerate}
+    \item Dans ces deux exemples, il y a une préposition et un \underline{article} \newline
+    Je vais \textbf{a} \underline{la} boulangerie. \newline
+    Je fais \textbf{de} \underline{la} natation.
+    \item L'article se contracte quand le mot est \textbf{masculin}. \newline
+    Je vais \textbf{au} restaurant. (au = à + le) \newline
+    Je fais \textbf{du} tennis. (du = de + le)
+    \item L'article se contracte quand le mot est \textbf{pluriel} (masculin or féminin). \newline
+    Je vais \textbf{aux} toilettes. (aux = à + les) \newline
+    Je fais \textbf{des} compétitions. (des = de + les)
+\end{enumerate}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|}
+\hline
+\multicolumn{1}{|l|}{au + nom masculin singulier} \\ \hline
+du + nom masculin singulier                       \\ \hline
+aux + non féminin ou masculin pluriel             \\ \hline
+des + nom féminin ou masculin pluriel             \\ \hline
+\end{tabular}
+\caption{L'article contracte et les prepositions}
+\label{tab:Larticle-contracte-et-les-prepositions}
+\end{table}
+
+\fbox{
+    \parbox{0.9\linewidth}{
+        \textbf{Attention}: 
+        \begin{enumerate}
+            \item Devant un nom masculin singulier qui commence par une voyelle ou un "h", on utilise "à l'" ou "de l'". \newline
+            Je vais \textbf{à l'}\underline{h}ôpital. Je fais \textbf{de l'}\underline{a}thlétisme.
+            \item Usually, we use "de la/du/des/de l'" when we use the verb "faire" \newline
+            And we use "à la/au/aux/à l'" when we use the verbe "aller".
+            \item The preposition "à..." means like \textbf{to, at} while the "de ..." means "of" when used as a preposition or "any/some" when used as an adjective. Also, "Du" is used as a partitive article, along with "de la", "de l'", to express uncountable quantities or when the amount is unknown.
+            \item One thing worth noting is that when express uncountable noun, there is no \textbf{pluriel} because if it is pluriel, it must be countable right. So we can use \textbf{des} from the "un/une/des" group.
+            \item Les prepositions de lieu that must have \textbf{de} behind follows the same rule as "du/de la/des/de l'"
+        \end{enumerate}
+    }
+}
+
+%----------------------------------------------------------------------------------------
+%	Prepositions
+%----------------------------------------------------------------------------------------
+\section*{Préposition}
+
+\subsection*{Les préposition devant les villes et pays}
+\begin{enumerate}
+    \item Les préposition \textbf{à, en, au, aux} indiquent le lieu où l'on est $\downarrow$ ou le lieu où l'on va $\rightarrow$. (The prepositions \textbf{à, en, au, aux} indicate the place where we are in now $\downarrow$ is or the place where we are going to $\rightarrow$). \newline
+    \textbf{For example}, \newline
+    $\downarrow$ J'habite \textbf{à} Paris, \textbf{en} France. \newline
+    $\rightarrow$ Je vais \textbf{au} Maroc.
+    \item Les préposition \textbf{du, de, des} indiquent le lieu d'où l'on vient. $\leftarrow$. (The preposotions \textbf{du, de, des} indicate the place where we come from $\leftarrow$) \newline
+    \textbf{For example}, \newline
+    $\leftarrow$ Je viens \textbf{de} Paris.
+    \item Ces préposition changent selon le \textbf{genre} (masculin ou féminin) et le \textbf{nombre} (singulier ou pluriel) du nom de lieu. (These prepositions change according to the gender (masculine or feminine) and the number (singular or plural) of the place name.)
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|c|}
+    \hline
+    +ville                    & \textbf{à}   & \textbf{de/d'} \\ \hline
+    + pays féminin singulier  & \textbf{en}  & \textbf{de/d'} \\ \hline
+    + pays masculin singulier & \textbf{au}  & \textbf{du}    \\ \hline
+    + pays/île pluriel        & \textbf{aux} & \textbf{des}   \\ \hline
+    \end{tabular}
+    \caption{Les préposition devant les villes et pays}
+    \label{tab:les-prepositions-devant-les-villes-et-pays}
+    \end{table}
+\end{enumerate}
+
+\section*{Les questions (Unit 3)}
+\subsection*{est-ce que}
+\begin{enumerate}
+    \item \textbf{est-ce que} + sujet + verbe $\cdots$? $\rightarrow$ Réponse fermée: oui/non \\
+    For example, \textbf{Est-ce que} tu aimes Paris? \textbf{Oui}, j'aime beaucoup cette ville. \\
+    \fbox{
+        \parbox{0.9\linewidth}{
+        \textbf{Attention}:
+        \begin{enumerate}
+            \item est-ce que $\rightarrow$ est-ce qu' + sujet qui commence par une voyelle ou un h. \\
+            e.g. \textbf{Est-ce qu'}elle aime Paris? \textbf{Est-ce qu'}Henri est italien?
+        \end{enumerate}
+        }
+    }
+\end{enumerate}
+
+\subsection*{Qu'est-ce que}
+\begin{enumerate}
+    \item \textbf{Qu'est-ce que} + sujet + verbe $\cdots$? = Sujet + verbe + \textbf{quoi}? $\rightarrow$ Réponse ouverte. \\
+    For example, \textbf{Qu'est-ce que} tu fais à Paris? Je visite des musée, je vais au restaurant. \\
+    \fbox{
+        \parbox{0.9\linewidth}{
+        \textbf{Attention}:
+        \begin{enumerate}
+            \item que dans une question inversee. e.g. \textbf{Que} fais-tu a Paris?
+            \item quoi dans une question avec intonation montante. e.g. Tu fais \textbf{quoi} a Paris?
+        \end{enumerate}
+        }
+    }
+\end{enumerate}
+
+\section*{Adjectif (Unit 3)}
+\begin{enumerate}
+    \item L'adjectif s'accorde en genre (masculin ou feminin) avec le nom (the adjective agrees in gender (masculine or feminine) with the noun)
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{masculin}       & \textbf{feminin} & \textbf{exemples}                                                                                           \\ \hline
+    a,i,o,u ou une consonne & +-e              & \begin{tabular}[c]{@{}l@{}}Il est joli, Elle est jolie\\ Il est gourmand. Elle est gourmande.\end{tabular}  \\ \hline
+    -e                      & same             & Il est sympathique. Elle est sympathique                                                                    \\ \hline
+    -ien/-on                & +-ne             & \begin{tabular}[c]{@{}l@{}}Il est italien. Elle est italienne\\ Il est bon. Elle est bonne.\end{tabular}    \\ \hline
+    -(i)er                  & -(i)ere          & \begin{tabular}[c]{@{}l@{}}Il est etranger. Elle est etrangere.\\ Il est fier. Elle est fiere.\end{tabular} \\ \hline
+    -eux                    & -euse            & Il est chaleureux. Elle est chaleureuse.                                                                    \\ \hline
+    \end{tabular}
+    \caption{}
+    \label{tab:adjectif}
+    \end{table}
+    \\
+    \fbox{
+        \parbox{0.9\linewidth}{
+        \textbf{Attention}:
+        \begin{enumerate}
+            \item beau $\rightarrow$ belle. gros $\rightarrow$ grosse
+        \end{enumerate}
+        }
+    }
+    \item L'adjectif s'accorde en nombre (singulier ou pluriel) avec le nom
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{singulier}           & \textbf{pluriel} & \textbf{exemples}                                                                                                         \\ \hline
+    -une voyelle ou une consonne & +-s              & \begin{tabular}[c]{@{}l@{}}Il est sympathique. Ils sont sympathiques.\\ Il est gourmand. Ils sont gourmands.\end{tabular} \\ \hline
+    -s, -x                       & same             & \begin{tabular}[c]{@{}l@{}}Il est gros. Ils sont gros.\\ Il est chaleureux. Ils sont chaleureux.\end{tabular}             \\ \hline
+    -eau                         & +-x              & Il est beau. Ils sont beaux.                                                                                              \\ \hline
+    -al                          & -aux             & Il est genial. Ils sont geniaux.                                                                                          \\ \hline
+    \end{tabular}
+    \caption{}
+    \label{tab:adjectif-nombre}
+    \end{table} 
+\end{enumerate}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Verb
+%----------------------------------------------------------------------------------------
+\section*{Verb}
+
+\subsection*{-er}
+\subsubsection*{s'appeler}
+\centerline{\small call oneself}
+\begin{multicols}{2}
+    \entry{Je m'appell\underline{e}}{}{}{I call myself}{}
+
+    \entry{Tu t'appell\underline{es}}{}{}{You call yourself}{}
+
+    \entry{Il/Elle s'appell\underline{e}}{}{}{He/She calls him/herself}{}
+
+    \entry{Nous nous appe\underline{lons}}{}{}{}{We call ourselves}
+
+    \entry{Vous vous appe\underline{lez}}{}{}{You call yourselves}{| mostly used for more than one person or one \textbf{formal} personne}
+
+    \entry{Elles/Ils s'appel\underline{lent}}{}{}{}{They call themselves}
+\end{multicols}
+
+\subsubsection*{parler}
+\centerline{\small to speak}
+\begin{multicols}{2}
+    \entry{Je parl\underline{e}}{}{}{I call myself}{}
+
+    \entry{Tu parl\underline{es}}{}{}{You call yourself}{}
+
+    \entry{Il/Rlle parl\underline{e}}{}{}{He/She calls him/herself}{}
+
+    \entry{Nous nous par\underline{lons}}{}{}{}{We call ourselves}
+    
+    \entry{Vous vous par\underline{lez}}{}{}{You call yourselves}{| mostly used for more than one person or one \textbf{formal} personne}
+
+    \entry{Elles/Ils par\underline{lent}}{}{}{}{They call themselves}
+\end{multicols}
+
+\subsubsection*{aller}
+\centerline{\small to go}
+\begin{multicols}{2}
+    \entry{Je vai\underline{s}}{}{}{I go/I am going}{}
+
+    \entry{Tu va\underline{s}}{}{}{You go/You are going}{}
+
+    \entry{Il/Elle/On va}{}{}{He/She/We go(es)/is(are) going}{}
+
+    \entry{Nous al\underline{lons}}{}{}{We go/We are going}{}
+
+    \entry{Vous al\underline{lez}}{}{}{You go/You are going}{| mostly used for more than one person or one \textbf{formal} personn}
+
+    \entry{Ils/Elles v\underline{ont}}{}{}{They go/They are going}{}
+\end{multicols}
+
+\subsection*{-re}
+\subsubsection*{être}
+\centerline{\small be}
+\begin{multicols}{2}
+    \entry{Je sui\underline{s}}{}{}{I am ...}{| Je suis australien.}
+
+    \entry{Tu e\underline{s}}{}{}{You are ...}{}
+
+    \entry{Il/Elle es\underline{t}}{}{}{He/She is ...}{}
+
+    \entry{Nous somm\underline{es}}{}{}{We are ...}{}
+
+    \entry{On es\underline{t}}{}{}{We are ...}{}
+
+    \entry{Vous ête\underline{s}}{}{}{You are ...}{| mostly used for more than one person or one \textbf{formal} personne}
+
+    \entry{Ils/Elles son\underline{t}}{}{}{They are ...}{}
+\end{multicols}
+
+\subsubsection*{faire}
+\centerline{\small to do}
+\begin{multicols}{2}
+    \entry{Je fai\underline{s}}{}{}{I do}{}
+
+    \entry{Tu fai\underline{s}}{}{}{You do}{}
+
+    \entry{Il/Elle fai\underline{t}}{}{}{He/She does}{}
+
+    \entry{Nous fai\underline{sons}}{}{}{We do}{}
+
+    \entry{Vous fai\underline{tes}}{}{}{You do}{| mostly used for more than one person or one \textbf{formal} personn}
+
+    \entry{Ils/Elles f\underline{ont}}{}{}{They do}{}
+\end{multicols}
+
+\subsubsection*{prendre}
+\centerline{\small to take}
+\begin{multicols}{2}
+    \entry{Je prend\underline{s}}{}{}{I take}{}
+
+    \entry{Tu prend\underline{s}}{}{}{You take}{}
+
+    \entry{Il/Elle prend}{}{}{He/She takes}{}
+
+    \entry{Nous pren\underline{ons}}{}{}{We take}{}
+
+    \entry{Vous pren\underline{ez}}{}{}{You take}{| mostly used for more than one person or one \textbf{formal} personn}
+
+    \entry{Ils/Elles pren\underline{nent}}{}{}{They take}{}
+\end{multicols}
+
+\subsection*{-ir}
+\subsubsection*{avoir}
+\centerline{\small have}
+\begin{multicols}{2}
+    \entry{J'ai}{}{}{I have ...}{}
+
+    \entry{Tu a\underline{s}}{}{}{You have ...}{}
+
+    \entry{Il/Elle a}{}{}{He / She has}{}
+
+    \entry{Nous av\underline{ons}}{}{}{We have ...}{}
+
+    \entry{Vous av\underline{ez}}{}{}{You have ... }{| mostly used for more than one person or one \textbf{formal} personne}
+
+    \entry{Ils/Elles on\underline{t}}{}{}{They have ...}{}
+\end{multicols}
+
+\subsubsection*{vouloir}
+\centerline{\small want}
+\begin{multicols}{2}
+    \entry{Je veu\underline{x}}{}{}{I want}{}
+
+    \entry{Tu veu\underline{x}}{}{}{You want}{}
+
+    \entry{Il/Elle/On veu\underline{t}}{}{}{He/She/We want(s)}{}
+
+    \entry{Nous vou\underline{lons}}{}{}{We want}{}
+
+    \entry{Vous vou\underline{lez}}{}{}{You want}{| mostly used for more than one person or one \textbf{formal} personn}
+
+    \entry{Ils/Elles v\underline{eulent}}{}{}{They want}{}
+\end{multicols}
+
+\subsubsection*{venir}
+\centerline{\small to come from + de/d'/du/des}
+\begin{multicols}{2}
+    \entry{Je vien\underline{s}}{}{}{I come from}{}
+
+    \entry{Tu vien\underline{s}}{}{}{you come from}{}
+
+    \entry{Il/Elle/On vien\underline{t}}{}{}{He/She/We come(s) from}{}
+
+    \entry{Nous ven\underline{ons}}{}{}{We come from}{}
+
+    \entry{Vous ven\underline{ez}}{}{}{You come from}{| mostly used for more than one person or one \textbf{formal} personn}
+
+    \entry{Ils/Elles vienn\underline{ent}}{}{}{They come from}{}
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	Sentence Structure
+%----------------------------------------------------------------------------------------
+\section*{Sentence Structure}
+
+\subsection*{Negation}
+\subsubsection*{ne ... pas}
+\begin{multicols}{2}
+    \entry{ne ... pas}{}{}{Not}{| used when the verb doesn't begin with an voyelle or an "h" | e.g. Je \textbf{ne} suis \textbf{pas} anglais.}
+
+    \entry{n' ... pas}{}{}{Not}{| used when the verb begins with an voyelle or an "h" | e.g. Elle \textbf{n'}est \textbf{pas} anglaise. 
+| Il \textbf{n}'habite \textbf{pas} en France}
+\end{multicols}
+
+\subsubsection*{ne ... plus}
+\begin{multicols}{2}
+    \entry{ne ... plus}{}{}{No longer}{| used with \textbf{faire} usually| e.g. Je \textbf{ne} fais \textbf{plus} de sport.}
+
+    \entry{n' ... plus}{}{}{No longer}{| used with \textbf{faire} usually and verbe avec voyelle/h.| e.g. Le stylo \textbf{n'}est \textbf{plus} sur la table.}
+\end{multicols}
+
+\subsubsection*{ne ... jamais}
+\begin{multicols}{2}
+    \entry{ne ... jamais}{}{}{}{e.g. Je \textbf{ne} fais \textbf{jamais} de sport.}
+
+    \entry{n' ... jamais}{}{}{}{used with verbe avec voyelle/h.}
+\end{multicols}
+
+\subsubsection*{ne ... rien}
+\begin{multicols}{2}
+    \entry{ne ... rien}{}{}{}{e.g. Je \textbf{ne} fais \textbf{rien}.}
+
+    \entry{n' ... rien}{}{}{}{used with verbe avec voyelle/h.}
+\end{multicols}
+
+\fbox{
+    \parbox{0.9\linewidth}{
+    \textbf{Attention}:
+    \begin{enumerate}
+        \item de la, du, des $\rightarrow$ de in negation\\
+        Je mange \textbf{des} bananes. $\rightarrow$ Je \underline{ne} mange \underline{pas} \textbf{de} bananes.
+    \end{enumerate} 
+    }
+}
+
+%----------------------------------------------------------------------------------------
+%	Regular Vocabulary
+%----------------------------------------------------------------------------------------
+\section*{Regular Vocabulary}
+\begin{center}
+    The way to remember whether a noun is feminin or masculin: Remember it's \textit{un ...} or \textit{une ...}, \textit{le} or \textit{la}
+\end{center}
+
+\subsection*{Date}
+\begin{multicols}{2}
+    \entry{lundi}{}{}{Monday}{}
+
+    \entry{mardi}{}{}{Tuesday}{}
+
+    \entry{mercredi}{}{}{Wednesday}{}
+
+    \entry{jeudi}{}{}{Thursday}{}
+
+    \entry{vendredi}{}{}{Friday}{}
+
+    \entry{samedi}{}{}{Saturday}{}
+
+    \entry{dimanche}{}{}{Sunday}{}
+\end{multicols}
+
+\subsection*{Month}
+\begin{multicols}{2}
+    \entry{janvier}{}{}{January}{}
+
+    \entry{février}{}{}{February}{}
+
+    \entry{mars}{}{}{March}{}
+
+    \entry{avril}{}{}{April}{}
+
+    \entry{mai}{}{}{May}{}
+
+    \entry{juin}{}{}{June}{}
+
+    \entry{juillet}{}{}{July}{}
+
+    \entry{août}{}{}{August}{}
+
+    \entry{septembre}{}{}{September}{}
+
+    \entry{octobre}{}{}{October}{}
+
+    \entry{novembre}{}{}{November}{}
+
+    \entry{décembre}{}{}{December}{}
+\end{multicols}
+
+\subsection*{Number}
+\subsubsection*{1-10}
+\begin{multicols}{2}
+    \entry{zéro}{}{}{zero / 0}{}
+
+    \entry{un}{}{}{one / 1}{}
+
+    \entry{deux}{}{}{two / 2}{}
+
+    \entry{trois}{}{}{three / 3}{}
+
+    \entry{quatre}{}{}{four / 4}{}
+    
+    \entry{cinq}{}{}{five / 5}{}
+
+    \entry{six}{}{}{six / 6}{}
+
+    \entry{sept}{}{}{seven / 7}{}
+
+    \entry{huit}{}{}{eight / 8}{}
+
+    \entry{neuf}{}{}{nine / 9}{}
+
+    \entry{dix}{}{}{ten / 10}{}
+\end{multicols}
+
+
+\subsubsection*{11-19}
+\begin{multicols}{2}
+    \entry{onze}{}{}{eleven / 11}{} 
+
+    \entry{douze}{}{}{twelve / 12}{}
+
+    \entry{treize}{}{}{thirteen / 13}{}
+
+    \entry{quatorze}{}{}{fourteen / 14}{}
+
+    \entry{quinze}{}{}{fifteen / 15}{}
+
+    \entry{seize}{}{}{sixteen / 16}{}
+
+    \entry{dix-sept}{}{}{seventeen / 17}{}
+
+    \entry{dix-huit}{}{}{eighteen / 18}{}
+
+    \entry{dix-neuf}{}{}{nineteen / 19}{}
+\end{multicols}
+
+\subsubsection*{20-29}
+\begin{multicols}{2}
+    \entry{vingt}{}{}{twenty / 20}{}
+    
+    \entry{vingt et un}{}{}{twenty one / 21}{}
+    
+    \entry{vingt deux}{}{}{twenty two / 22}{}
+    
+    \textit{The rest just use \textbf{vingt} plus number from 3-9.}
+\end{multicols}
+
+\subsubsection*{30-39}
+\begin{multicols}{2}
+    \entry{trente}{}{}{thirty / 30}{}
+    
+    \entry{trente-et-un}{}{}{thirty one / 31}{}
+    
+    \textit{Follow what \textbf{vingt} does.}{}
+\end{multicols}
+
+\subsubsection*{40-49}
+\begin{multicols}{2}
+    \entry{quarante}{}{}{forty / 40}{}
+
+    \textit{Follow what \textbf{trente} does.}
+\end{multicols}
+
+\subsubsection*{50-59}
+\begin{multicols}{2}
+    \entry{cinquante}{}{}{fifty / 50}{}
+
+    \textit{Follow what \textbf{quarante} does.}
+\end{multicols}
+
+\subsubsection*{60-69}
+\begin{multicols}{2}
+    \entry{soixante}{}{}{sixty / 60}{}
+
+    \entry{soixante-neuf}{}{}{sixty nine / 69}{}
+\end{multicols}
+
+\subsection*{Nationality}
+\subsubsection*{Pays}
+\begin{multicols}{2}
+    \entry{la Chine}{}{}{}{China}
+
+    \entry{la France}{}{}{}{France}
+
+    \entry{la Hongrie}{}{}{}{Hungry}
+
+    \entry{l'Allemagne}{}{}{}{Germany}
+
+    \entry{l'Italie}{}{}{}{Italy}
+
+    \entry{les États-Unis}{}{}{}{United States}
+
+    \entry{le Danemark}{}{}{}{Denmark}
+
+    \entry{le Luxembourg}{}{}{}{Luxembourg}
+
+    \entry{le Gabon}{}{}{}{Gabon}
+\end{multicols}
+\fbox{
+    \parbox{0.9\linewidth}{
+    \textbf{Attention}:
+    \begin{enumerate}
+        \item Ces pays sont masculins: \textit{le Bélize, le Cambodge, le Mexique, le Mozambique, le zaïre et le Zimbabwe.}
+    \end{enumerate}
+    }
+}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|lll|}
+\hline
+\multicolumn{1}{|c|}{\textbf{masculin}} & \multicolumn{1}{c|}{\textbf{féminin}} & \textbf{exemples}                                                                                                                                                                                             \\ \hline
+\multicolumn{1}{|l|}{-e}                & \multicolumn{1}{l|}{same}             & \begin{tabular}[c]{@{}l@{}}Il est belge. Elle est belge.\\ Il est russe. Elle est russe.\end{tabular}                                                                                                         \\ \hline
+\multicolumn{1}{|l|}{-s}                & \multicolumn{1}{l|}{+-e}              & \begin{tabular}[c]{@{}l@{}}Il est français. Elle est française.\\ Il est suédois. Elle est suédoise.\\ Il est japonais. Elle est japonaise.\end{tabular}                                                      \\ \hline
+\multicolumn{1}{|l|}{-d}                & \multicolumn{1}{l|}{+-e}              & Il est allemand. Elle est allemande.                                                                                                                                                                          \\ \hline
+\multicolumn{1}{|l|}{-n}                & \multicolumn{1}{l|}{+-e}              & \begin{tabular}[c]{@{}l@{}}Il est argentin. Elle est argentine.\\ Il est mexicain. Elle est mexicaine.\end{tabular}                                                                                           \\ \hline
+\multicolumn{1}{|l|}{-ien}              & \multicolumn{1}{l|}{+-ne}             & \begin{tabular}[c]{@{}l@{}}Il est colombien. Elle est colombienne.\\ Il est péruvien. Elle est péruvienne.\\ Il est équatorien. Elle est équatorienne.\\ Il est norvégien. Elle est norvégienne.\end{tabular} \\ \hline
+\multicolumn{3}{|l|}{Attention: grec $\rightarrow$ grecque; turc $\rightarrow$ turque; coréen $\rightarrow$ coréenne}                                                                                                                                                                           \\ \hline
+\end{tabular}
+\caption{Adjectifs de Nationalité}
+\label{tab:adjectifs-de-nationalite}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Pour former le pluriel}} & \multicolumn{1}{c|}{\textbf{exemples}}                                                        \\ \hline
++-s                                                   & \begin{tabular}[c]{@{}l@{}}Il est belge.\\ Ils sont belges.\\ Elles sont belges.\end{tabular} \\ \hline
+si l'adjectif porte déjà un -s au singuler            & \begin{tabular}[c]{@{}l@{}}Il est chinois.\\ Ils sont chinois.\end{tabular}                   \\ \hline
+\end{tabular}
+\caption{Pluriel}
+\label{tab:pluriel-adjectifs-de-nationalite}
+\end{table}
+
+\begin{multicols}{2}
+    \entry{francais(e)}{}{}{French}{}
+
+    \entry{anglais(e)}{}{}{English}{}
+
+    \entry{japonais(e)}{}{}{Japanese}{}
+
+    \entry{pakistanais(e)}{}{}{Pakistani}{}
+
+    \entry{néo-zélandais(e)}{}{}{New Zealander}{}
+
+    \entry{polonais(e)}{}{}{Polish}{}
+
+    \entry{singapourien(ne)}{}{}{Singaporean}{}
+
+    \entry{australien(ne)}{}{}{Australian}{}
+
+    \entry{canadien(ne)}{}{}{Canadien}{}
+
+    \entry{cambodgien(ne)}{}{}{Cambodian}{}
+
+    \entry{malaisien(ne)}{}{}{Malaisian}{}
+
+    \entry{vietnamien(ne)}{}{}{Vietnamese}{}
+
+    \entry{indien(ne)}{}{}{Indian}{}
+
+    \entry{américain(e)}{}{}{American}{}
+
+    \entry{suédois(e)}{}{}{Swedish}{}
+
+    \entry{chinois(e)}{}{}{Chinese}{}
+
+    \entry{espagnol(e)}{}{}{Spanish}{}
+
+    \entry{allemand(e)}{}{}{German}{}
+
+    \entry{russe}{}{}{Russian}{}
+
+    \entry{belge}{}{}{Belgian}{}
+\end{multicols}
+
+\subsection*{Emotion and Feelings}
+\begin{multicols}{2}
+    \entry{triste}{}{a.}{sad}{| Je \textbf{suis} triste.}
+
+    \entry{forme}{}{n.f.}{shape}{Je \textbf{suis} en forme(I am healthy)}
+
+    \entry{malade}{}{a.}{sick}{Je \textbf{suis} malade.}
+
+    \entry{fatigué}{}{a.}{tired}{| Je \textbf{suis} fatigué.}
+    
+    \entry{soif}{}{n.f.}{thirst}{| J'\textbf{ai} soif.}
+    
+    \entry{chaud}{}{n.m.}{hot}{| J'\textbf{ai} chaud.}
+
+    \entry{sommeil}{}{n.m.}{sleep}{J'\textbf{ai} sommeil.}
+
+    \entry{froid}{}{a.}{cold}{J'\textbf{ai} froid.}
+
+\end{multicols}
+
+\subsection*{Profession}
+\begin{multicols}{2}
+    \entry{un(e) pâtissier(-ière)}{pah-tees-yay}{n.m.}{pastry chef}{| Pierre Hermé est pâtissier.}
+
+    \entry{un(e) chanteur(-se)}{shahn-tuhr}{n.}{singer}{| Stromae est chanteur.}
+
+    \entry{un(e) nageur(-se)}{nah-zhur}{n.}{swimmer}{| Camillie Lacourt est nageur.}
+
+    \entry{un(e) journaliste}{zhoor-nah-leest}{n.}{journalist}{| Léa Salamé est journaliste}
+
+    \entry{un(e) architecte}{}{}{architect}{}
+
+    \entry{un(e) footballeur(-se)}{}{}{footballer}{| Kylian Mbappé est footballeur.}
+
+    \entry{un(e) acteur(-trice)}{}{}{actor / actress}{}
+
+    \entry{un(e) photographe}{}{}{photographer}{}
+\end{multicols}
+
+\subsection*{Objets}
+\begin{multicols}{2}
+    \entry{un stylo}{}{n.m.}{a pen}{}
+
+    \entry{des ciseaux}{}{n.}{scissors}{}
+
+    \entry{un cahier}{}{n.m.}{a notebook}{}
+
+    \entry{une trousse}{}{n.f.}{a small bag}{| small like a pencil bag}
+
+    \entry{une gomme}{}{n.f.}{an erasor}{}
+
+    \entry{des clés}{}{n.}{keys}{}
+
+    \entry{une clé}{}{n.f.}{a key}{}
+
+    \entry{des lunettes}{}{n.}{glasses}{}
+
+    \entry{un livre}{}{n.m.}{a book}{}
+
+    \entry{un tableau}{}{n.m.}{a blackboard}{}
+
+    \entry{un chaise}{}{n.m.}{a chair}{}
+
+    \entry{un ordinateur}{}{n.m.}{a computer}{}
+
+    \entry{un téléphone}{}{n.m.}{a telephone}{}
+
+    \entry{un ballon}{}{n.m.}{a ball}{}
+
+    \entry{une souris}{}{n.f.}{a mouse}{}
+
+    \entry{une tasse}{}{n.f.}{a glass}{}
+
+    \entry{une glace}{}{n.f.}{an ice-cream}{}
+\end{multicols}
+
+\subsection*{Sports}
+\begin{multicols}{2}
+    \entry{la danse}{}{n.f.}{dance}{}
+
+    \entry{la natation}{}{n.f.}{swim}{| \textbf{-tion} indicates the noun is féminin}
+
+    \entry{le jogging}{}{n.m.}{jog}{}
+
+    \entry{la randonnée}{}{n.f.}{hiking}{}
+
+    \entry{le ski}{}{n.m.}{ski}{}
+
+    \entry{le VTT}{}{n.m.}{mountain bike}{| VTT is vélo tout terrain}
+
+    \entry{le basket-ball}{}{n.m.}{basketball}{}
+
+    \entry{le football}{}{n.m.}{football}{}
+
+    \entry{l'athlétisme}{}{n.m.}{track}{| \textbf{-isme} indicates the nouns is masculin}
+\end{multicols}
+
+\subsection*{Forms}
+\begin{center}
+    shapes
+\end{center}
+\begin{multicols}{2}
+    \entry{un carré}{}{n.m.}{square}{}
+
+    \entry{un triangle}{}{n.m.}{triangle}{}
+
+    \entry{un rond}{}{n.m.}{circle}{}
+
+    \entry{un rectangle}{}{n.m.}{rectangle}{}
+\end{multicols}
+
+\subsection*{Des lieux de loisirs}
+\begin{center}
+    Places of Leisure
+\end{center}
+\begin{multicols}{2}
+    \entry{la bibliothèque}{}{n.f.}{library}{}
+
+    \entry{le cinéma}{}{n.m.}{cinema}{}
+
+    \entry{le théâtre}{}{n.m.}{theatre}{}
+
+    \entry{la piscine}{}{n.f.}{swimming pool}{}
+
+    \entry{la patinoire}{}{n.f.}{ice skating rink}{}
+
+    \entry{le restaurant}{}{n.m.}{restaurant}{}
+\end{multicols}
+
+\subsection*{Des Loisirs}
+\begin{center}
+    Leisure Activities
+\end{center}
+\begin{multicols}{2}
+    \entry{la lecture}{}{n.f.}{read}{}
+
+    \entry{le cinéma}{}{n.m.}{cinema}{}
+
+    \entry{la peinture}{}{n.f.}{pain}{}
+
+    \entry{la musique}{}{n.f.}{music}{}
+
+    \entry{le dessin}{}{n.m.}{draw}{}
+
+    \entry{le bricolage}{}{n.m.}{DIY}{}
+
+    \entry{la couture}{}{n.f.}{sew}{}
+
+    \entry{la sculpture}{}{n.f.}{sculpture}{}
+\end{multicols}
+
+\subsection*{Unit 3}
+\subsubsection*{Saison}
+\begin{center}
+    season, n. f.
+\end{center}
+\begin{multicols}{2}
+    \entry{le printemps}{}{n. m.}{spring}{}
+    
+    \entry{l'été}{}{n. m.}{summer}{}
+
+    \entry{l'automne}{}{n. m.}{automn}{}
+
+    \entry{l'hiver}{}{n. m.}{winter}{}
+\end{multicols}
+
+\subsubsection*{Météo}
+\begin{center}
+    weather, the short form of \textit{météorologie}
+\end{center}
+\begin{multicols}{2}
+    \entry{le soleil/Il fait beau}{}{}{the sun/light}{}
+
+    \entry{la pluie/Il pleut}{}{}{the rain}{}
+
+    \entry{la neige/Il neige}{}{}{the snow}{}
+
+    \entry{le vent/Il y a du vent}{}{}{the wind}{}
+
+    \entry{les neuages/C'est nuageux}{}{}{the cloud}{\textit{nuageux} is adj. and it means cloudy}
+
+    \entry{l'orage/Il y a des éclairs}{}{}{the storm}{}
+
+    \entry{Il fait chaud/Il fait 30 degrés}{}{}{hot}{}
+
+    \entry{Il fait froid/Il fait moins 5 degrés}{}{}{cold}{}
+\end{multicols}
+
+\subsubsection*{Des lieux de la ville}
+\begin{multicols}{2}
+    \entry{un musée}{}{}{a museum}{}
+
+    \entry{le château}{}{}{the castle}{}
+
+    \entry{la cathédrale}{}{}{the cathedral}{}
+
+    \entry{le parc, le jardin}{}{}{the park, the garden}{}
+
+    \entry{un bar, un restaurant}{}{}{a bar, a restaurant}{}
+
+    \entry{une boutique, un magasin}{}{}{a shop, a store}{}
+
+    \entry{la rue, le boulevard}{}{}{the street, the boulevard}{}
+\end{multicols}
+
+\subsubsection*{Des moyens de transport}
+\begin{multicols}{2}
+    \entry{a pied}{}{}{on foot}{}
+
+    \entry{en métro}{}{}{by metro}{}
+
+    \entry{en bus}{}{}{by bus}{}
+
+    \entry{en voiture}{}{}{by car}{}
+
+    \entry{en avion}{}{}{by plane}{}
+
+    \entry{a cheval}{}{}{on horse}{}
+
+    \entry{en bateau}{}{}{by boat}{}
+
+    \entry{a vélo}{}{}{by bike}{}
+\end{multicols}
+
+\subsubsection*{Les prepositions de lieu}
+\begin{multicols}{2}
+    \entry{dans}{}{}{in}{}
+
+    \entry{devant}{}{}{in front}{}
+
+    \entry{derrière}{}{}{behind}{}
+
+    \entry{sur}{}{}{on}{}
+
+    \entry{sous}{}{}{below}{}
+
+    \entry{en face (de)}{}{}{in front of}{}
+
+    \entry{à côté (de)}{}{}{next to}{}
+
+    \entry{près (de)}{}{}{close to}{}
+
+    \entry{loin (de)}{}{}{far from}{}
+
+    \entry{entre}{}{}{between}{}
+
+    \entry{a droite (de)}{}{}{on the right of}{}
+
+    \entry{a gauche (de)}{}{}{on the left of}{}
+\end{multicols}
+
+\subsection*{Unclassified}
+\begin{multicols}{2}
+    \entry{mot}{moh}{n.m.}{word}{| Vous connaissez quels mots?(What words do you know)}
+
+    \entry{phrase}{frahz}{n.f.}{sentence}{| phrase simple(simple sentences)}
+
+    \entry{majuscule}{mah-zhoo-skool}{n.f.}{capital letters}{}
+
+    \entry{goût}{goo}{n.m.}{taste/hobbies}{| la langue est l'organe du goût(the tongue is the organ of taste)}
+
+    \entry{loisir}{lwah-zeer}{n.m.}{leisure}{| Quels sont tes loisirs?(What are your leisure activities)}
+
+    \entry{souligner}{}{v.t.}{underline}{}
+
+    \entry{entourer}{}{v.t.}{circle}{}
+
+    \entry{surligner}{}{v.t.}{highlight}{}
+
+    \entry{dans}{}{prep.}{in}{| Dans ton sac (In your bag)}
+
+    \entry{sculpture}{}{n.f.}{sculpture}{| \textbf{la} sculpture}
+
+    \entry{patinoire}{}{n.f.}{ice skating rink}{| \textbf{la} patinoire}
+
+    \entry{bricolage}{}{n.m.}{DIY}{| \textbf{le} bricolage| Je fait du bricolage.}
+
+    \entry{piscine}{}{n.f.}{swimming pool}{| \textbf{la} piscine| Victor va à la piscine}
+
+    \entry{restaurant}{}{n.m.}{restaurant}{| \textbf{le} restaurant}
+
+    \entry{lieu}{}{n.m.}{place}{| Its pluriel is \textbf{lieux}}
+
+    \entry{regarder}{}{v.t.}{watch, look}{}
+
+    \entry{rendez-vous}{}{n.m.}{appointment}{}
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	Phrases
+%----------------------------------------------------------------------------------------
+\section*{Phrases}
+\subsection*{S'exprimer poliment}
+\begin{multicols}{2}
+    \entry{Je voudrais}{voo-dray}{}{I would like}{| Je voudrais un café.(I'd like a cup of coffee}
+
+    \entry{s'il vous plait}{}{}{please}{| Un café, s'il vous plait.(A coffee, please) | ABBR: \textbf{SVP}}
+
+    \entry{s'il ton plait}{}{}{please}{| ABBR: \textbf{STP}}
+
+    \entry{Merci}{}{}{Thanks}{}
+
+    \entry{De Rien}{duh ryen}{}{It's nothing.}{}
+
+    \entry{Pardon}{}{}{Sorry}{}
+
+    \entry{Je vous en prie}{zhuh voo zahn pree}{}{You are welcome}{}
+
+    \entry{Je suis désolé(e)}{day-zoh-lay(ee)}{}{I am sorry}{| \textit{désolé} is for masculin and \textit{désolée} is for feminin}
+\end{multicols}
+
+\subsection*{Exprimer des goûts}
+\begin{center}
+    Express your hobbies
+\end{center}
+\begin{multicols}{2}
+    \entry{J'adore}{}{}{I love...}{| J'adore chanter.(I love singing)}
+
+    \entry{J'aime}{}{}{I like}{| J'aime \textbf{la} lecture.}
+
+    \entry{Je n'aime pas}{}{}{I don't like}{| Je n'aime pas le sport.}
+
+    \entry{Je déteste}{}{}{I hate}{| Je déteste danser.}
+\end{multicols}
+
+\fbox{
+    \parbox{0.9\linewidth}{
+        \textbf{Attention}:
+        \begin{enumerate}
+            \item J'adore + nom = J'adore + verbe infinitif (to do) \textit{The same applies to J'aime, Je déteste and Je n'aime} \newline
+            e.g. J'adore \textbf{la} dance = J'adore \textbf{dancer}.
+        \end{enumerate}
+    }
+}
+
+\subsection*{Demander l'heure}
+\begin{center}
+    Ask for time
+\end{center}
+\begin{multicols}{2}
+    \entry{Quelle heure il est?}{}{}{}{What time is it?}
+
+    \entry{Il est quelle heure?}{}{}{}{It is what time?}
+
+    \entry{C'est à quelle heure}{}{}{}{It is at what time?}
+\end{multicols}
+
+\subsection*{Indiquer l'heure}
+\begin{center}
+    Indicate the time
+\end{center}
+\begin{multicols}{2}
+    \entry{Il est neuf heures.}{}{}{}{It is 9:00}
+
+    \entry{Il est neuf hueres quinze.}{}{}{}{It is 9:15.}
+
+    \entry{Il est neuf heures trente}{}{}{}{It is 9:30.}
+
+    \entry{Il est neuf heures quarante-cinq}{}{}{}{It is 9:45.}
+
+    \entry{Il est midi}{}{}{}{It is noon.}
+
+    \entry{Il est minuit}{}{}{}{It is midnight.}
+\end{multicols}
+
+\subsection*{Préciser un moment}
+\begin{center}
+    Indicate time precisely
+\end{center}
+\begin{multicols}{2}
+    \entry{aujourd'hui}{}{}{today}{}
+
+    \entry{demain}{}{}{tomorrow}{}
+
+    \entry{tôt}{}{}{early}{| C'est tôt(It's early)}
+
+    \entry{tard}{}{}{late}{| C'est tard(It's late)}
+
+    \entry{le matin}{}{}{morning}{}
+
+    \entry{le soir}{}{}{evening}{}
+
+    \entry{le week-end}{}{}{weekends}{}
+
+    \entry{le semaine}{}{}{week days}{}
+
+    \entry{l'après-midi}{}{}{afternoon}{| \textbf{après} means after. \textbf{midi} means noon. so means \textbf{afternoon}}
+\end{multicols}
+
+\subsection{Souhaiter quelque chose à quelqu'un}
+\begin{center}
+    To wish something for someone
+\end{center}
+\begin{multicols}{2}
+    \entry{Bonne journée}{}{n.f.}{Wish you a good day!}{}
+
+    \entry{Bonne soirée}{}{n.f.}{Have a good evening!}{}
+
+    \entry{Bonne nuit}{}{n.f.}{Have a good night!}{}
+
+    \entry{Bonne chance}{}{n.f.}{Good luck!}{}
+
+    \entry{Bon courage}{}{n.m.}{Good luch!}{}
+
+    \entry{Bonne année}{}{n.f.}{Have a good year!}{| Usually used at the start of one year.}
+
+    \entry{Bonne santé}{}{n.f.}{Wish you good health!}{}
+
+    \entry{Bonne fête}{}{n.f.}{Happy festival}{| A French culture.}
+
+    \entry{Bon voyage}{}{n.m.}{Have a good journey!}{}
+
+    \entry{Bonnes vacances}{}{pl.}{Happy holidays}{}
+
+    \entry{Joyeux anniversaire}{}{n.f.}{Happy birthday!}{}
+
+    \entry{Joyeux Noël}{}{n.m.}{Happy Christmas}{}
+
+    \entry{Bon appétit}{}{n.m.}{Have a good eat}{}
+\end{multicols}
+
+\subsection*{Unclassfied}
+\begin{enumerate}
+    \item \textbf{Qu'est-ce que c'est} (What is it?) \newline
+    C'est utile. C'est un rectangle. (It is useful. It is a rectangle) \newline
+    C'est gris. C'est une table? (It is grey. Is it a table?)
+    \item \textbf{C'est quoi, ton sport?} (What is your sport?/What sport do you do?) \newline
+    Mon sport, c'est le foot. Je regarde le foot avec mes amis le week-end et je joue avec mon frère. (My sport is football. I watch football with my friends on weekends and play with my brother.)
+    \item \textbf{Vous faites quoi et où} (You do what and where?) \newline
+    Je vais lire à la bibliothèque. (I'm going to read at the library) \newline
+    Je fais du dessin le week-end. (I draw on weekends)
+\end{enumerate}
+
+\end{document}
